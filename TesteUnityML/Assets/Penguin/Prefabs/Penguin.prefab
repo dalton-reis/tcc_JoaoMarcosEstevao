@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5479827101292905905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5479827101292485009}
+  - component: {fileID: 5479827101293779377}
+  - component: {fileID: 5479827101294910321}
+  - component: {fileID: 127691312295341445}
+  - component: {fileID: 6166464463333837889}
+  - component: {fileID: 4992893256225696067}
+  - component: {fileID: 7189771904331944902}
+  - component: {fileID: 6633087882848735435}
+  m_Layer: 0
+  m_Name: Penguin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5479827101292485009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.907893, y: 8.944976, z: 12.740123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5479827101293779377
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  m_Mesh: {fileID: 4300000, guid: 9c679de690aba08469bbb22454d930b2, type: 3}
+--- !u!23 &5479827101294910321
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9c679de690aba08469bbb22454d930b2, type: 3}
+  - {fileID: 2100002, guid: 9c679de690aba08469bbb22454d930b2, type: 3}
+  - {fileID: 2100004, guid: 9c679de690aba08469bbb22454d930b2, type: 3}
+  - {fileID: 2100006, guid: 9c679de690aba08469bbb22454d930b2, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!54 &127691312295341445
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!136 &6166464463333837889
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.24
+  m_Height: 1.41
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.22, z: 0.13}
+--- !u!114 &4992893256225696067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    vectorObservationSize: 8
+    numStackedVectorObservations: 1
+    vectorActionSize: 0200000003000000
+    vectorActionDescriptions: []
+    vectorActionSpaceType: 0
+  m_Model: {fileID: 11400000, guid: 735d3f9d5c1b97c4483e2516dbb249ee, type: 3}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: PenguinLearning
+  m_TeamID: 0
+  m_useChildSensors: 1
+--- !u!114 &7189771904331944902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d9722f751d6d4f43aef95aaf229e827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 5000
+    resetOnDone: 1
+    onDemandDecision: 0
+    numberOfActionsBetweenDecisions: 4
+  moveSpeed: 5
+  turnSpeed: 180
+  heartPrefab: {fileID: 2041031715948898936, guid: f7c8b2ec77dfe514d9ab4cb9fde9f2f6,
+    type: 3}
+  regurgitatedFishPrefab: {fileID: 511441044743552838, guid: 1d066949f29b4b249b0833c0a00961ce,
+    type: 3}
+--- !u!114 &6633087882848735435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479827101292905905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensorName: RayPerceptionSensor
+  detectableTags:
+  - baby
+  - fish
+  - Untagged
+  raysPerDirection: 2
+  maxRayDegrees: 60
+  sphereCastRadius: 0.5
+  rayLength: 20
+  rayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  observationStacks: 1
+  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
+  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
+  useWorldPositions: 1
+  startVerticalOffset: 0
+  endVerticalOffset: 0
