@@ -18896,8 +18896,6 @@ MonoBehaviour:
     numberOfActionsBetweenDecisions: 1
   moveSpeed: 5
   turnSpeed: 180
-  goodBall: {fileID: 0}
-  badBall: {fileID: 0}
 --- !u!114 &1313421931
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,9 +9,6 @@ public class DogAgent : Agent
     [Tooltip("How fast the agent turns")]
     public float turnSpeed = 180f;
 
-    public GameObject goodBall;
-    public GameObject badBall;
-
     private DogAcademy dogAcademy;
 
     new private Rigidbody rigidbody;
@@ -32,12 +29,12 @@ public class DogAgent : Agent
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(transform.position, goodBall.transform.position) < contactRadius)
+        if (true)
         {
             AddReward(1f);
             score++;
         }
-        else if (Vector3.Distance(transform.position, badBall.transform.position) < contactRadius)
+        else
         {
             AddReward(-1f);
         }
@@ -118,10 +115,10 @@ public class DogAgent : Agent
     public override void CollectObservations()
     {
         // Distance to the baby (1 float = 1 value)
-        AddVectorObs(Vector3.Distance(goodBall.transform.position, transform.position));
+        //AddVectorObs(Vector3.Distance(goodBall.transform.position, transform.position));
 
         // Direction to baby (1 Vector3 = 3 values)
-        AddVectorObs((goodBall.transform.position - transform.position).normalized);
+        //AddVectorObs((goodBall.transform.position - transform.position).normalized);
 
         // Direction penguin is facing (1 Vector3 = 3 values)
         AddVectorObs(transform.forward);
