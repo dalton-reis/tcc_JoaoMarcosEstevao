@@ -13,6 +13,34 @@ TagManager:
   - DebuggerText
   - Scene Target
   - Word
+  - target
+  - ground
+  - goal
+  - agent
+  - block
+  - wall
+  - switchOff
+  - badFood
+  - stone
+  - pyramid
+  - walkableSurface
+  - purpleAgent
+  - purpleGoal
+  - blueAgent
+  - blueGoal
+  - ball
+  - symbol_X
+  - iWall
+  - symbol_O
+  - food
+  - pit
+  - symbol_O_Goal
+  - symbol_X_Goal
+  - drinkSpot
+  - Rabbit
+  - Wolf
+  - Deer
+  - DeadPrey
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,17 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
+enum CurrentAnimalAction
+{
+    idle,
+    walking,
+    drinking,
+    eating,
+    running,
+    attacking,
+    dead
+};
 
 public class SimulationController : MonoBehaviour
 {
@@ -73,7 +85,16 @@ public class SimulationController : MonoBehaviour
 
     void RestartScene(float temperature)
     {
-        if (temperature >= 49.5f && !_sceneRestarted)
+        GameObject[] wolfs = GameObject.FindGameObjectsWithTag("Wolf");
+        GameObject[] rabbits = GameObject.FindGameObjectsWithTag("Rabbit");
+        GameObject[] deer = GameObject.FindGameObjectsWithTag("Deer");
+
+        var animalsList = new List<GameObject>();
+        animalsList.AddRange(wolfs);
+        animalsList.AddRange(rabbits);
+        animalsList.AddRange(deer);
+
+        if ((temperature >= 49.5f || animalsList.Count == 0) && !_sceneRestarted)
         {
             RestartSceneEffects();
             StartCoroutine(RestartSceneAfterSeconds());
@@ -119,5 +140,10 @@ public class SimulationController : MonoBehaviour
         {
             water.SetActive(false);
         }
+    }
+
+    public SceneState GetSceneState()
+    {
+        return _currentSceneState;
     }
 }
